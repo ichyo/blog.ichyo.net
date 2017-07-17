@@ -3,6 +3,9 @@ s3_secret: <%= ENV['S3_SECRET_KEY'] %>
 s3_bucket: blog.ichyo.net
 site: _site
 
+cloudfront_invalidate_root: true
+cloudfront_wildcard_invalidation: true
+
 max_age:
   "assets/*": 6000
   "*": 300
@@ -42,10 +45,6 @@ max_age:
 #     quantity: 1
 #     items:
 #       - your.website.com
-
-# cloudfront_invalidate_root: true
-
-cloudfront_wildcard_invalidation: true
 
 # concurrency_level: 5
 
