@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Atcoder Regular Contest 078 - Donuts
 ---
 
 [ARC 078](http://arc078.contest.atcoder.jp/) に参加した。3問目が解けなかったので264位。レーティングは2440->2397。
