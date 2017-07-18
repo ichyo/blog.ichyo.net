@@ -41,3 +41,12 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - README.md
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "post"
+    values:
+      permalink: /posts/:title/
