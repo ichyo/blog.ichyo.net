@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Deploying Rust applications to Heroku
+title: Rust の ウェブアプリケーション を Heroku で動かす
 ---
 
 この記事では、Rust で書かれた Web アプリケーションを Heroku で簡単にデプロイする方法について説明します。
 
-記事の内容は、ほぼ [Deploying Rust applications to Heroku, with example code for Iron | Random Hacks](http://www.randomhacks.net/2014/09/17/deploying-rust-heroku-iron/) と同じです。正確な情報が読みたい人は原文を読んで下さい。
+記事の内容は、ほぼ [Deploying Rust applications to Heroku, with example code for Iron \| Random Hacks](http://www.randomhacks.net/2014/09/17/deploying-rust-heroku-iron/) と同じです。正確な情報が読みたい人は原文を読んで下さい。
 
 サンプルレポジトリを使う
 -------------
 
-[サンプルのレポジトリ](https://github.com/emk/heroku-rust-cargo-hello) を利用してください。以下のコマンドでデプロイすることができます。
+とりあえずデプロイしたいときは [サンプルのレポジトリ](https://github.com/emk/heroku-rust-cargo-hello) を利用してください。以下のコマンドでデプロイすることができます。
 ```
 $ git clone https://github.com/emk/heroku-rust-cargo-hello.git
 $ cd heroku-rust-cargo-hello
@@ -27,14 +27,15 @@ $ git push heroku master
 $ cargo new --bin hello-heroku
 ```
 
-依存ディレクトリを `Cargo.toml` に追加します。
+依存ライブラリを `Cargo.toml` に追加します。
 ```
 [dependencies]
 iron = "*"
 router = "*"
 ```
 
-`main.rs` を編集します。`/name` にアクセスすると "Hello, name!" が 返されるような Web サーバーです。詳細は [iron](https://github.com/iron/iron) や [router](https://github.com/iron/router) の example や document を読んで下さい。
+`src/main.rs` を編集します。ここでは `/name` にアクセスすると "Hello, name!" が 返されるような Web サーバーを記述します。
+詳細は [iron](https://github.com/iron/iron) や [router](https://github.com/iron/router) の example や document を読んで下さい。
 
 ```rust
 extern crate iron;
