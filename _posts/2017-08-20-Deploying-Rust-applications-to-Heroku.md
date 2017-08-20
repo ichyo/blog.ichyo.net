@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rust の ウェブアプリケーション を Heroku で動かす
+title: Rust の Web アプリケーション を Heroku で動かす
 ---
 
 この記事では、Rust で書かれた Web アプリケーションを Heroku で簡単にデプロイする方法について説明します。
